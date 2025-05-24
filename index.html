@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gasolina</title>
+  <link rel="stylesheet" href="css/estilo.css">
+<link rel="shortcut icon" href="img/expendedor.png" type="image/x-icon">
+</head>
+
+<body>
+  <h1>Enunciado</h1>
+  <p>Una empresa que trabaja con vehículos desea calcular las necesidades de combustible (cantidad de combustible
+    necesario para llenar los depósitos de todos sus vehículos). Para ello nos han facilitado los siguientes datos
+    (el número de vehículos puede variar con lo cual deberá leerse por INPUTS):</p>
+
+  <ul>
+    <li>Número de Vehículos Turísticos: valor por defecto, 30.</li>
+    <li>Capacidad del depósito: constante 40</li>
+    <li>Número de Vehículos Todo Terreno: valor por defecto, 10. </li>
+    <li>Capacidad del depósito: constante 60</li>
+  </ul>
+
+  <p>Tomando en cuenta que la capacidad del depósito de cada tipo de vehículo es constante, se desea crear un programa
+    que muestre por consola y por pantalla la necesidad total de combustible actual de la siguiente manera: ‘La
+    necesidad de combustible de los vehículos turísticos es de x y la de los vehículos todo terreno es de y, para un
+    total de x+y’</p>
+     <br>
+     <div>
+    <hr>
+    <br>
+
+    <h2>Calculadora de gasolina</h2>
+    <legend>¿Cuántos litros de gasolina debemos comprar para mantener nuestra flota de coches activa?</legend>
+<br>
+<img src="./img/expendedor.png" alt="foto" class="imagen">
+    <p>
+      <label for="vt">Número de Vehículos Turísticos</label>
+      <input id="vt" type="number" value="30">
+    </p>
+
+    <p>
+      <label for="vtt">Número de Vehículos Todo Terreno</label>
+      <input id="vtt" type="number" value="10">
+    </p>
+<br>
+    <button type="button" onclick="calcular()">Calcular</button>
+    <p id="respuesta"></p>
+    <br>
+    <hr>
+  </div>
+  <script src="js/gasolina.js"></script>
+
+</body>
+
+</html>
